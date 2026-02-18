@@ -70,8 +70,8 @@ const Landing = () => {
           <h2 className="mb-6 sm:mb-8 lg:mb-12 text-center text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">Beneficios Exclusivos</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
               {[
-              { icon: Award, title: "Sin experiencia previa", desc: "No necesitás ser vendedor, solo conectar personas." },
-              { icon: TrendingUp, title: "Comisiones atractivas", desc: "Ganá créditos por cada referido que se convierta en alta." },
+              { icon: Award, title: "Sin experiencia previa", desc: "No necesitas ser vendedor, solo referenciar personas." },
+              { icon: TrendingUp, title: "Comisiones atractivas", desc: "Ganá créditos por cada referenciado que se convierta en alta." },
               { icon: Users, title: "Capacitación gratuita", desc: "Accedé a cursos para mejorar tus resultados." },
               { icon: Shield, title: "Respaldo de Cober", desc: "Trabajá con una empresa líder en medicina prepaga." },
             ].map((b) => (
@@ -135,7 +135,7 @@ const Landing = () => {
               </div>
               <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Conectá</h3>
               <p className="text-muted-foreground text-sm sm:text-base">
-                Empezá a registrar Referenciadores en la plataforma
+              Empezá a registrar Referenciados en la plataforma
               </p>
             </div>
 
