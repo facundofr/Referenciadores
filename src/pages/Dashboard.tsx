@@ -13,7 +13,7 @@ const Dashboard = () => {
            <div className="h-20 w-20 flex items-center justify-center p-0">
             <img src="/logo.png" alt="COBER" className="h-full w-full object-contain" />
           </div>
-            <span className="text-lg font-bold tracking-tight">COBER</span>
+            <span className="text-lg font-bold tracking-tight">COBER.</span>
           </div>
           <div className="flex items-center gap-2">
             {/* Desktop Navigation */}
