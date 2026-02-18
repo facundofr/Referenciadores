@@ -7,9 +7,9 @@ const Landing = () => {
     <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
       <header className="flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4 max-w-7xl mx-auto">
-        <div className="flex items-center gap-2">
-          <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-            <Shield className="h-5 w-5 text-primary-foreground" />
+          <div className="flex items-center gap-2">
+          <div className="h-20 w-20 flex items-center justify-center p-0">
+            <img src="/logo.png" alt="COBER" className="h-full w-full object-contain" />
           </div>
           <span className="text-lg font-bold tracking-tight">COBER</span>
         </div>
@@ -30,8 +30,12 @@ const Landing = () => {
       <section className="px-4 sm:px-6 lg:px-8 pt-6 sm:pt-12 lg:pt-16 pb-8 sm:pb-12 lg:pb-20 text-center">
         <div className="mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
-            <div className="mx-auto md:mx-0 flex h-36 w-36 sm:h-48 sm:w-48 md:h-64 md:w-64 lg:h-80 lg:w-80 items-center justify-center rounded-full bg-primary/10 order-1 md:order-2">
-              <Users className="h-16 w-16 sm:h-24 sm:w-24 md:h-32 md:w-32 lg:h-40 lg:w-40 text-primary" />
+            <div className="mx-auto md:mx-0 flex items-center justify-center order-1 md:order-2">
+              <img
+                src="/referenciadoreshero.png"
+                alt="Referenciados"
+                className="h-36 w-36 sm:h-48 sm:w-48 md:h-64 md:w-64 lg:h-80 lg:w-80 rounded-full object-cover"
+              />
             </div>
             <div className="text-center md:text-left order-2 md:order-1">
               <h1 className="mb-3 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
@@ -65,7 +69,7 @@ const Landing = () => {
         <div className="max-w-6xl mx-auto pt-12 sm:pt-16 lg:pt-20">
           <h2 className="mb-6 sm:mb-8 lg:mb-12 text-center text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">Beneficios Exclusivos</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
-            {[
+              {[
               { icon: Award, title: "Sin experiencia previa", desc: "No necesitás ser vendedor, solo conectar personas." },
               { icon: TrendingUp, title: "Comisiones atractivas", desc: "Ganá créditos por cada referido que se convierta en alta." },
               { icon: Users, title: "Capacitación gratuita", desc: "Accedé a cursos para mejorar tus resultados." },
@@ -76,7 +80,11 @@ const Landing = () => {
                 className="flex items-start gap-3 rounded-xl border border-border bg-card p-3 sm:p-4"
               >
                 <div className="flex h-8 w-8 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-lg bg-primary/15">
-                  <b.icon className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
+                  {b.img ? (
+                    <img src={b.img} alt={b.title} className="h-4 w-4 sm:h-5 sm:w-5 object-contain" />
+                  ) : (
+                    <b.icon className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
+                  )}
                 </div>
                 <div>
                   <h3 className="font-semibold text-sm sm:text-base">{b.title}</h3>
@@ -100,15 +108,12 @@ const Landing = () => {
               <div className="absolute -top-3 -left-3 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-base sm:text-lg z-10">
                 1
               </div>
-              <div className="rounded-2xl bg-gradient-to-br from-orange-100 to-orange-200 dark:from-orange-900/20 dark:to-orange-800/20 p-6 sm:p-8 pt-10 sm:pt-12 h-48 sm:h-64 flex items-center justify-center mb-4 sm:mb-6">
-                <div className="relative w-24 h-36 sm:w-32 sm:h-48 bg-white dark:bg-gray-800 rounded-3xl shadow-xl border-2 sm:border-4 border-gray-800 dark:border-gray-200">
-                  <div className="absolute top-6 sm:top-8 left-3 sm:left-4 right-3 sm:right-4 space-y-1.5 sm:space-y-2">
-                    <div className="h-1.5 sm:h-2 bg-gray-300 dark:bg-gray-600 rounded"></div>
-                    <div className="h-1.5 sm:h-2 bg-gray-300 dark:bg-gray-600 rounded w-3/4"></div>
-                    <div className="h-1.5 sm:h-2 bg-gray-300 dark:bg-gray-600 rounded w-1/2"></div>
-                  </div>
-                  <div className="absolute bottom-6 sm:bottom-8 right-3 sm:right-4 w-6 h-6 sm:w-8 sm:h-8 bg-primary rounded-full"></div>
-                </div>
+              <div className="rounded-2xl overflow-hidden h-48 sm:h-64 flex items-center justify-center mb-4 sm:mb-6 bg-transparent p-0">
+                <img
+                  src="/notebook.jpg"
+                  alt="Notebook"
+                  className="w-full h-full object-cover border-0 shadow-none"
+                />
               </div>
               <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Registrate</h3>
               <p className="text-muted-foreground text-sm sm:text-base">
@@ -121,12 +126,12 @@ const Landing = () => {
               <div className="absolute -top-3 -left-3 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-base sm:text-lg z-10">
                 2
               </div>
-              <div className="rounded-2xl bg-gradient-to-br from-pink-100 to-rose-200 dark:from-pink-900/20 dark:to-rose-800/20 p-6 sm:p-8 pt-10 sm:pt-12 h-48 sm:h-64 flex items-center justify-center mb-4 sm:mb-6">
-                <div className="relative w-24 h-36 sm:w-32 sm:h-48 bg-white dark:bg-gray-800 rounded-3xl shadow-xl border-2 sm:border-4 border-gray-800 dark:border-gray-200">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Users className="h-14 w-14 sm:h-20 sm:w-20 text-primary/60" />
-                  </div>
-                </div>
+              <div className="rounded-2xl overflow-hidden h-48 sm:h-64 flex items-center justify-center mb-4 sm:mb-6 bg-transparent p-0">
+                <img
+                  src="/cel.jpg"
+                  alt="Conectá"
+                  className="w-full h-full object-cover border-0 shadow-none"
+                />
               </div>
               <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Conectá</h3>
               <p className="text-muted-foreground text-sm sm:text-base">
@@ -139,19 +144,12 @@ const Landing = () => {
               <div className="absolute -top-3 -left-3 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-base sm:text-lg z-10">
                 3
               </div>
-              <div className="rounded-2xl bg-gradient-to-br from-teal-100 to-cyan-200 dark:from-teal-900/20 dark:to-cyan-800/20 p-6 sm:p-8 pt-10 sm:pt-12 h-48 sm:h-64 flex items-center justify-center mb-4 sm:mb-6">
-                <div className="relative w-32 h-24 sm:w-40 sm:h-32 bg-white dark:bg-gray-800 rounded-xl shadow-xl p-3 sm:p-4">
-                  <div className="absolute top-3 sm:top-4 left-3 sm:left-4 right-3 sm:right-4">
-                    <TrendingUp className="h-8 w-8 sm:h-12 sm:w-12 text-primary/60 mb-1 sm:mb-2" />
-                    <div className="flex gap-0.5 sm:gap-1">
-                      <div className="h-6 w-1.5 sm:h-8 sm:w-2 bg-primary/40 rounded"></div>
-                      <div className="h-8 w-1.5 sm:h-12 sm:w-2 bg-primary/50 rounded"></div>
-                      <div className="h-10 w-1.5 sm:h-16 sm:w-2 bg-primary/60 rounded"></div>
-                      <div className="h-12 w-1.5 sm:h-20 sm:w-2 bg-primary/70 rounded"></div>
-                      <div className="h-16 w-1.5 sm:h-24 sm:w-2 bg-primary rounded"></div>
-                    </div>
-                  </div>
-                </div>
+              <div className="rounded-2xl overflow-hidden h-48 sm:h-64 flex items-center justify-center mb-4 sm:mb-6 bg-transparent p-0">
+                <img
+                  src="/calculadora.jpg"
+                  alt="Calculadora"
+                  className="w-full h-full object-cover border-0 shadow-none"
+                />
               </div>
               <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Cobrá</h3>
               <p className="text-muted-foreground text-sm sm:text-base">
@@ -177,11 +175,11 @@ const Landing = () => {
             {/* Brand */}
             <div>
               <div className="flex items-center gap-2 mb-3 sm:mb-4">
-                <div className="h-8 w-8 sm:h-10 sm:w-10 rounded-lg bg-primary flex items-center justify-center">
-                  <Shield className="h-5 w-5 sm:h-6 sm:w-6 text-primary-foreground" />
-                </div>
-                <span className="text-lg sm:text-xl font-bold">COBER</span>
-              </div>
+                  <div className="h-20 w-20 flex items-center justify-center p-0">
+            <img src="/logo.png" alt="COBER" className="h-full w-full object-contain" />
+          </div>
+          <span className="text-lg font-bold tracking-tight">COBER</span>
+        </div>
               <p className="text-xs sm:text-sm text-muted-foreground">
                 Programa de Referidos - Conectá y Ganá
               </p>
@@ -211,14 +209,10 @@ const Landing = () => {
 
           {/* Security Icons & Copyright */}
           <div className="pt-6 sm:pt-8 border-t border-border">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-3 sm:gap-4">
-              <div className="flex items-center gap-3 sm:gap-4 text-muted-foreground">
-                <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
-                <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
-                <Lock className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
-              </div>
+            <div className="flex flex-col md:flex-row items-center ">
+              
               <p className="text-[10px] sm:text-xs text-muted-foreground text-center">
-                © 2024 COBER. TODOS LOS DERECHOS RESERVADOS.
+                © 2026 COBER. TODOS LOS DERECHOS RESERVADOS.
               </p>
             </div>
           </div>

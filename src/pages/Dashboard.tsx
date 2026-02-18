@@ -10,9 +10,9 @@ const Dashboard = () => {
       <header className="sticky top-0 z-50 bg-background border-b border-border px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-              <Shield className="h-5 w-5 text-primary-foreground" />
-            </div>
+           <div className="h-20 w-20 flex items-center justify-center p-0">
+            <img src="/logo.png" alt="COBER" className="h-full w-full object-contain" />
+          </div>
             <span className="text-lg font-bold tracking-tight">COBER</span>
           </div>
           <div className="flex items-center gap-2">
