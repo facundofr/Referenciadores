@@ -39,7 +39,7 @@ const Landing = () => {
             </div>
             <div className="text-center md:text-left order-2 md:order-1">
               <h1 className="mb-3 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
-                Conectá y <span className="text-primary">Ganá</span>
+                Referenciá y <span className="text-primary">Ganá</span>
               </h1>
               <p className="mb-6 text-muted-foreground text-sm sm:text-base lg:text-xl">
                 Sumate al programa de referidos de Cober y generá ingresos recomendando planes de medicina prepaga.
@@ -129,7 +129,7 @@ const Landing = () => {
               <div className="rounded-2xl overflow-hidden h-48 sm:h-64 flex items-center justify-center mb-4 sm:mb-6 bg-transparent p-0">
                 <img
                   src="/cel.jpg"
-                  alt="Conectá"
+                  alt="Referenciá"
                   className="w-full h-full object-cover border-0 shadow-none"
                 />
               </div>
