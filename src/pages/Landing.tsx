@@ -181,7 +181,7 @@ const Landing = () => {
           <span className="text-lg font-bold tracking-tight">COBER</span>
         </div>
               <p className="text-xs sm:text-sm text-muted-foreground">
-                Programa de Referidos - Conectá y Ganá
+                Programa de Referidos - Referenciá y Ganá
               </p>
             </div>
 
