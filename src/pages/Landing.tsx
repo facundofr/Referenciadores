@@ -95,7 +95,6 @@ const Landing = () => {
           </div>
         </div>
       </section>
-
       {/* How It Works */}
       <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
         <div className="max-w-6xl mx-auto">

@@ -69,7 +69,7 @@ const Perfil = () => {
           <div className="grid grid-cols-3 gap-4 pt-4 border-t border-border">
             <div>
                 <p className="text-2xl font-bold text-primary">12</p>
-                  <p className="text-xs text-muted-foreground mt-1">Referenciadores</p>
+                  <p className="text-xs text-muted-foreground mt-1">Referenciados</p>
             </div>
             <div>
               <p className="text-2xl font-bold text-primary">$24.5k</p>

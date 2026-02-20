@@ -41,7 +41,7 @@ const NuevoReferenciador = () => {
     setTimeout(() => {
       setLoading(false);
       toast({
-        title: "¡Referenciador agregado!",
+        title: "¡Referenciado agregado!",
         description: "El contacto fue registrado exitosamente.",
       });
       navigate("/referenciadores");
@@ -56,7 +56,7 @@ const NuevoReferenciador = () => {
           <Link to="/dashboard">
             <ArrowLeft className="h-6 w-6 text-foreground" />
           </Link>
-          <h1 className="text-xl font-bold">Nuevo Referenciador</h1>
+          <h1 className="text-xl font-bold">Nuevo Referenciado</h1>
         </div>
       </header>
 
@@ -70,7 +70,7 @@ const NuevoReferenciador = () => {
             <div>
               <h3 className="font-semibold mb-1">¿Cómo funciona?</h3>
               <p className="text-sm text-muted-foreground">
-                Completá los datos de tu referenciador. Nuestro equipo lo contactará y si se concreta el alta, ganarás créditos.
+                Completá los datos de tu referenciado. Nuestro equipo lo contactará y si se concreta el alta, ganarás créditos.
               </p>
             </div>
           </div>
@@ -145,7 +145,7 @@ const NuevoReferenciador = () => {
               className="min-h-24 rounded-xl bg-secondary border-border resize-none"
             />
             <p className="text-xs text-muted-foreground">
-              Cualquier información adicional que ayude al equipo a contactar mejor al referenciador.
+              Cualquier información adicional que ayude al equipo a contactar mejor al referenciado.
             </p>
           </div>
 
@@ -160,7 +160,7 @@ const NuevoReferenciador = () => {
               ) : (
                 <>
                   <Check className="h-5 w-5 mr-2" />
-                  Agregar Referenciador
+                  Agregar Referenciado
                 </>
               )}
             </Button>

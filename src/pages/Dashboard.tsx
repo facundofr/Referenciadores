@@ -13,7 +13,7 @@ const Dashboard = () => {
            <div className="h-20 w-20 flex items-center justify-center p-0">
             <img src="/logo.png" alt="COBER" className="h-full w-full object-contain" />
           </div>
-            <span className="text-lg font-bold tracking-tight">COBER.</span>
+            <span className="text-lg font-bold tracking-tight">COBER</span>
           </div>
           <div className="flex items-center gap-2">
             {/* Desktop Navigation */}
@@ -64,7 +64,7 @@ const Dashboard = () => {
                 </div>
               </div>
               <p className="text-2xl font-bold mb-1">12</p>
-              <p className="text-sm text-muted-foreground">Referenciadores activos</p>
+              <p className="text-sm text-muted-foreground">Referenciados activos</p>
             </Card>
 
             <Card className="p-4 rounded-xl bg-primary/5 border-primary/20">
@@ -102,7 +102,7 @@ const Dashboard = () => {
                   <Plus className="h-6 w-6 text-primary" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-semibold mb-1">Agregar Referenciador</h3>
+                  <h3 className="font-semibold mb-1">Agregar Referenciado</h3>
                   <p className="text-sm text-muted-foreground">Cargá un nuevo contacto</p>
                 </div>
               </div>
@@ -116,7 +116,7 @@ const Dashboard = () => {
                       <Users className="h-6 w-6 text-primary" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-semibold mb-1">Mis Referenciadores</h3>
+                      <h3 className="font-semibold mb-1">Mis Referenciados</h3>
                       <p className="text-sm text-muted-foreground">Ver estado de contactos</p>
                     </div>
                   </div>
@@ -175,7 +175,7 @@ const Dashboard = () => {
           </Link>
           <Link to="/referenciadores" className="flex flex-col items-center gap-1 text-muted-foreground">
             <Users className="h-5 w-5" />
-            <span className="text-xs">Referenciadores</span>
+            <span className="text-xs">Referenciados</span>
           </Link>
           <Link to="/nuevo-referenciador" className="flex flex-col items-center gap-1 text-muted-foreground">
             <div className="p-2 rounded-full bg-primary">

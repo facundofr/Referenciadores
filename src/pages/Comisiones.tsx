@@ -161,7 +161,7 @@ const Comisiones = () => {
             <div className="flex-1">
               <h3 className="font-semibold text-sm mb-1">¿Cómo se calculan los créditos?</h3>
               <p className="text-xs text-muted-foreground">
-                Ganás $2,500 por cada referenciador que se dé de alta. Los créditos quedan disponibles una vez confirmada el alta del cliente.
+                Ganás $2,500 por cada referenciado que se dé de alta. Los créditos quedan disponibles una vez confirmada el alta del cliente.
               </p>
             </div>
           </div>
